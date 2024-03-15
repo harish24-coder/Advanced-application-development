@@ -1,0 +1,90 @@
+/* Footer.css */
+
+.footer {
+    background: linear-gradient(to right, #2980b9, #6dd5fa); /* Gradient background */
+    color: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold; /* Bold font for emphasis */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+  }
+  
+  .footer-info {
+    flex: 1;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align items to the end */
+  }
+  
+  .footer-menu li {
+    margin-left: 2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+  }
+  
+  .footer-menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .footer-menu a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px; /* Add bottom border effect */
+  }
+  
+  .footer-menu a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .footer-menu a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  /* Responsive Footer */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .footer-menu {
+      margin-top: 1rem;
+      justify-content: flex-start; /* Align items to the start */
+    }
+    
+    .footer-menu li {
+      margin: 0.5rem 0;
+    }
+  }
+  
