@@ -1,0 +1,51 @@
+/* Center the container on the page */
+.container-fluid {
+  width: 80%; /* Set the width of the container */
+  max-width: 1000px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 230px; /* Adjust top margin */
+  margin-bottom: 20px; /* Adjust bottom margin */
+  margin-right: 40px;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+/* Table header styles */
+.table thead th {
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+/* Table body styles */
+.table tbody td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+}
+
+/* Alternate row color */
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray */
+}
+
+/* Button styles */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Red */
+  color: #fff; /* White text */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red */
+}

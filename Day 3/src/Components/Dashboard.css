@@ -1,0 +1,38 @@
+/* Center the table */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust height as needed */
+  }
+  
+  /* Table styles */
+  .table {
+    width: 80%; /* Make the table wider */
+    max-width: 1000px; /* Limit the maximum width */
+    margin-top: 20px; /* Adjust top margin */
+    margin-bottom: 20px; /* Adjust bottom margin */
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  /* Table header styles */
+  .table thead th {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #dee2e6;
+    padding: 12px; /* Increase padding */
+    font-size: 16px; /* Increase font size */
+  }
+  
+  /* Table body styles */
+  .table tbody td {
+    border: 1px solid #dee2e6;
+    padding: 12px; /* Increase padding */
+    font-size: 14px; /* Increase font size */
+  }
+  
+  /* Alternate row color */
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray */
+  }
+  

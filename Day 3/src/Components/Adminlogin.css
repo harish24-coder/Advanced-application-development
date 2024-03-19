@@ -1,0 +1,124 @@
+/* new-login.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .login-background {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)), url('https://images8.alphacoders.com/601/601793.jpg');
+    background-size: cover;
+  }
+  
+  .login-container {
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #000;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type='submit'] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type='submit']:hover {
+    background-color: #0056b3;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-container {
+    max-width: 400px;
+  }
+  
+  .login-form {
+    padding: 20px;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 93.5%;
+  }
+  
+  button[type='submit'] {
+    width: 100%;
+  }
+  
+  .register-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .register-link a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .register-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  .admin-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .admin-link a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .admin-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .login-container {
+      width: 90%;
+    }
+  }
+  

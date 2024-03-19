@@ -1,0 +1,76 @@
+/* Advanced Navbar.css with enhanced styling */
+
+/* Define colors */
+:root {
+  --sandy-beige: #f5deb3; /* Sandy beige color */
+  --light-brown: #deb887; /* Light brown color */
+  --dark-brown: #8b4513; /* Dark brown color */
+}
+
+/* Navbar styles */
+.navbar {
+  background: linear-gradient(to bottom, var(--sandy-beige) 80%, transparent); /* Sandy beige background with fade effect */
+  color: var(--dark-brown); /* Dark brown text color for accents */
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dark-brown); /* Dark brown text color */
+  text-decoration: none;
+}
+
+/* Navbar menu */
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Navbar item */
+.navbar-item {
+  margin-left: 2rem;
+}
+
+/* Navbar link */
+.navbar-link {
+  color: var(--dark-brown); /* Dark brown text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: var(--light-brown); /* Light brown color on hover */
+}
+
+/* Navbar toggle (hamburger icon) */
+.navbar-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; /* Hide by default on larger screens */
+}
+
+@media screen and (max-width: 768px) {
+  /* Hide the menu on smaller screens */
+  .navbar-menu {
+    display: none;
+  }
+  
+  /* Show the hamburger icon on smaller screens */
+  .navbar-toggle {
+    display: block;
+  }
+}

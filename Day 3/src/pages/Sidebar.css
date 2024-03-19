@@ -1,0 +1,46 @@
+.sidebar {
+    height: 100%;
+    width: 0; /* Start with a width of 0 */
+    position: fixed;
+    top: 0;
+    left: 0; /* Start from the left edge */
+    background-color: #f5deb3; /* Sandy beige */
+    padding-top: 50px;
+    transition: width 0.3s; /* Smooth width transition */
+    overflow-x: hidden; /* Hide overflow content */
+}
+
+.sidebar.show {
+    width: 250px; /* Expand to full width when shown */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #433d3c; /* Warm neutral text color */
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ffffff; /* Lighter sandy beige */
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 18px; 
+    left: 20px;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff; /* Warm neutral text color */
+}
