@@ -1,0 +1,61 @@
+/* Home.css */
+
+.home-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.boat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.boat {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fdf5e6; /* Sandy beige */
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* Adjust width as needed */
+}
+
+.boat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.boat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.boat h2 {
+  font-size: 24px;
+  color: #2f4f4f; /* Warm neutral */
+  margin-bottom: 10px;
+}
+
+.boat p {
+  font-size: 16px;
+  color: #696969; /* Warm neutral */
+  margin-bottom: 15px;
+}
+
+.boat button {
+  background-color: #000000af; /* Water tone */
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.boat button:hover {
+  background-color: #0f8cdf; /* Darker shade of water tone */
+}

@@ -1,0 +1,16 @@
+/* Define sandy beige and warm neutral colors */
+:root {
+    --sandy-beige: #d2b48c;
+    --warm-neutral: #444;
+  }
+  
+  /* Profile container styles */
+  .profile-container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    border: 1px solid var(--warm-neutral);
+    border-radius: 5px;
+    background-color: var(--sandy-beige);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }

@@ -1,0 +1,96 @@
+/* register.css */
+
+.register-background {
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images8.alphacoders.com/601/601793.jpg'); /* Background image */
+    background-size: cover;
+}
+
+.register-container {
+    width: 400px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Position the form absolutely */
+    top: 50%; /* Move the form down by 50% of the viewport height */
+    left: 50%; /* Move the form to the right by 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Center the form both horizontally and vertically */
+    border: 2px solid #000;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4)); /* Add gradient background */
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type='submit'] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type='submit']:hover {
+    background-color: #0056b3;
+}
+
+/* Additional styles for register container */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-container {
+    max-width: 400px;
+}
+
+.register-form {
+    padding: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+    width: 93.5%;
+}
+
+button[type='submit'] {
+    width: 100%;
+}
+
+.login-link {
+    display: flex;
+    justify-content: center; /* Center the link horizontally */
+    margin-top: 20px; /* Add margin to separate the link from the form */
+}
+
+.login-link span {
+    margin-right: 5px; /* Add spacing between the text and the link */
+}
+
+@media screen and (max-width: 600px) {
+    .register-container {
+        width: 90%;
+    }
+}

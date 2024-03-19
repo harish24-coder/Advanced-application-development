@@ -1,0 +1,37 @@
+.booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .booked-boat {
+    display: flex;
+    align-items: center;
+    background-color: sandybeige;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .boat-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .boat-details {
+    flex-grow: 1; /* Allow boat details to grow and take up remaining space */
+  }
+  
+  .boat-details h2 {
+    color: #333; /* Warm neutral color for headings */
+    margin-top: 0;
+  }
+  
+  .boat-details p {
+    color: #555; /* Warm neutral color for text */
+    margin: 5px 0;
+  }
+  
